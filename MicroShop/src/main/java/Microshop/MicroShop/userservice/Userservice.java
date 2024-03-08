@@ -1,5 +1,6 @@
 package Microshop.MicroShop.userservice;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,9 +18,9 @@ public class Userservice {
     private String Password ;//(hashed for security);
     @Column(name="email")
     private String Email;
-    @JsonProperty("first_name")@JsonProperty("first_name")
+    @JsonProperty("first_name")
     private String First_Name;
-    @Column(name="last_name")
+    @JsonProperty("last_name")
     private String Last_Name;
     @Column(name="address")
     private String Address;
